@@ -46,4 +46,8 @@ alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r"
 
 for x in alpha:
     dist.append(Ltext.count(x))
-print(dist)
+ziplist = zip(dist,alpha)
+for y in ziplist:
+    if y[0]>0:
+        print(y[1]*y[0])
+    

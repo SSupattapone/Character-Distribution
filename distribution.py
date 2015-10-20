@@ -39,7 +39,10 @@ Notice about this example:
 text = input("Please enter a string of text (the bigger the better): ")
 print(('The distribution of characters in "{0}" is: ').format(text))
 
-
+Ltext = str(text).lower()
 
 dist = []
 alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
+for x in alpha:
+    

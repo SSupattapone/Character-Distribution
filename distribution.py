@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Sam Supattapone
-Credit: none
+Credit: Sawyer
 
 Assignment: Character Distribution
 
@@ -40,14 +40,16 @@ text = input("Please enter a string of text (the bigger the better): ")
 print(('The distribution of characters in "{0}" is: ').format(text))
 
 Ltext = str(text).lower()
+maxlen = len(text)
 
 dist = []
 alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+final = []
 
 for x in alpha:
     dist.append(Ltext.count(x))
 ziplist = zip(dist,alpha)
-for y in ziplist:
-    if y[0]>0:
-        print(y[1]*y[0])
+while maxlen>0:
+    for y in ziplist:
+        print(y[0]*y[1])
     

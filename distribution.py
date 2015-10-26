@@ -50,6 +50,7 @@ for x in alpha:
 ziplist = zip(dist,alpha)
 while maxlen>0:
     for y in ziplist:
-        print(y[0]*y[1])
+        if y[0] == maxlen:
+            print(y[0]*y[1])
     maxlen=maxlen-1
     

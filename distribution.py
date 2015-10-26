@@ -47,7 +47,7 @@ alpha = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r"
 
 for x in alpha:
     dist.append(Ltext.count(x))
-ziplist = zip(dist,alpha)
+ziplist = list(zip(dist,alpha))
 while maxlen>0:
     for y in ziplist:
         if y[0] == maxlen:
